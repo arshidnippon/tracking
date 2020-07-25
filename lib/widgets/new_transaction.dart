@@ -23,7 +23,7 @@ class _NewTransactionState extends State<NewTransaction> {
     final enteredTitle = _titleController.text;
     final enteredAmount = double.parse(_amountController.text);
 
-    if (enteredTitle.isEmpty || enteredAmount <= 0  || _selectedDate == null) {
+    if (enteredTitle.isEmpty || enteredAmount <= 0 || _selectedDate == null) {
       return;
     }
 
@@ -84,7 +84,7 @@ class _NewTransactionState extends State<NewTransaction> {
               child: Row(
                 children: <Widget>[
                   Expanded(
-                                      child: Text(
+                    child: Text(
                       _selectedDate == null
                           ? 'No Date Chosen!'
                           : 'Picked Date: ${DateFormat.yMd().format(_selectedDate)}',
