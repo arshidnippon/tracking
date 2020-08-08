@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final isLandScape = mediaQuery.orientation == Orientation.landscape;
     final appBar = AppBar(
       title: SafeArea(
-        child: Text(
+        child: const Text(
           'Personal Expenses',
         ),
       ),
